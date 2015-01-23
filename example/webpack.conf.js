@@ -1,11 +1,10 @@
 var path = require('path');
-var folder = path.join(__dirname, "/example");
 
 module.exports = {
   context: __dirname,
-  entry: path.join(folder, "bundle.js"),
+  entry: path.join(__dirname, "bundle.js"),
   output: {
-    path: path.join(folder),
+    path: path.join(__dirname),
     filename: "bundle.out.js"
   },
 
